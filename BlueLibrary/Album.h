@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Album : NSObject
+@property (nonatomic, copy, readonly) NSString *title, *artist, *genre, *coverUrl, *year;
 
+- (id)initWithTitle: (NSString *)title artist:(NSString *)artist genre:(NSString *)genre coverUrl:(NSString *)coverUrl year:(NSString *)year;
 @end
