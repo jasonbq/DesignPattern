@@ -19,6 +19,8 @@
 		450EECD917A9B03A00957F62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450EECD817A9B03A00957F62 /* ViewController.m */; };
 		450EECE517A9B05E00957F62 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 450EECE417A9B05E00957F62 /* HTTPClient.m */; };
 		96D5FEF517D8646A00E61695 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D5FEF417D8646A00E61695 /* Album.m */; };
+		96D5FEF817D8737B00E61695 /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D5FEF717D8737B00E61695 /* AlbumView.m */; };
+		96D5FEFE17D87E4400E61695 /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D5FEFD17D87E4400E61695 /* LibraryAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,10 @@
 		450EECE417A9B05E00957F62 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
 		96D5FEF317D8646A00E61695 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
 		96D5FEF417D8646A00E61695 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		96D5FEF617D8737B00E61695 /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
+		96D5FEF717D8737B00E61695 /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
+		96D5FEFC17D87E4400E61695 /* LibraryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryAPI.h; sourceTree = "<group>"; };
+		96D5FEFD17D87E4400E61695 /* LibraryAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,13 +93,12 @@
 		450EECC517A9B03A00957F62 /* BlueLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				96D5FEFB17D8781800E61695 /* Model */,
+				96D5FEF917D8780900E61695 /* View */,
+				96D5FEFA17D8781300E61695 /* Controller */,
 				450EECE217A9B04400957F62 /* API */,
-				450EECD717A9B03A00957F62 /* ViewController.h */,
-				450EECD817A9B03A00957F62 /* ViewController.m */,
 				450EECCE17A9B03A00957F62 /* AppDelegate.h */,
 				450EECCF17A9B03A00957F62 /* AppDelegate.m */,
-				96D5FEF317D8646A00E61695 /* Album.h */,
-				96D5FEF417D8646A00E61695 /* Album.m */,
 				450EECC617A9B03A00957F62 /* Supporting Files */,
 			);
 			path = BlueLibrary;
@@ -118,8 +123,37 @@
 			children = (
 				450EECE317A9B05E00957F62 /* HTTPClient.h */,
 				450EECE417A9B05E00957F62 /* HTTPClient.m */,
+				96D5FEFC17D87E4400E61695 /* LibraryAPI.h */,
+				96D5FEFD17D87E4400E61695 /* LibraryAPI.m */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		96D5FEF917D8780900E61695 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96D5FEF617D8737B00E61695 /* AlbumView.h */,
+				96D5FEF717D8737B00E61695 /* AlbumView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		96D5FEFA17D8781300E61695 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				450EECD717A9B03A00957F62 /* ViewController.h */,
+				450EECD817A9B03A00957F62 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		96D5FEFB17D8781800E61695 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96D5FEF317D8646A00E61695 /* Album.h */,
+				96D5FEF417D8646A00E61695 /* Album.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +226,8 @@
 				450EECD917A9B03A00957F62 /* ViewController.m in Sources */,
 				450EECE517A9B05E00957F62 /* HTTPClient.m in Sources */,
 				96D5FEF517D8646A00E61695 /* Album.m in Sources */,
+				96D5FEF817D8737B00E61695 /* AlbumView.m in Sources */,
+				96D5FEFE17D87E4400E61695 /* LibraryAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
